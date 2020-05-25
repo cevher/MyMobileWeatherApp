@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="#ff1ba1ee"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/cityText"
+    android:textColor="#fff"
+    android:text="Spokane,US"
+    android:layout_centerHorizontal="true"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_below="@+id/cityText"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <TextView
+        android:id="@+id/tempText"
+        android:text="12 Deg"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_below="@id/cityText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="42sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<TextView
+    android:id="@+id/windText"
+    android:textColor="#fff"
+    android:textSize="16sp"
+    android:text="Wind"
+    android:layout_below="@+id/thumbnailIcon"
+    android:layout_marginTop="35dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:text="Cloud"
+        android:layout_below="@+id/windText"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/pressureText"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Pressure"
+        android:layout_below="@+id/cloudText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Humidity"
+        android:layout_below="@+id/pressureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/riseText"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Sun Rise"
+        android:layout_below="@+id/humidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/setText"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:text="Sunset"
+        android:layout_below="@+id/riseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/updateText"
+        android:text="Last Updated"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:layout_below="@+id/setText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/changeCityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET CITY"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/updateText"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
